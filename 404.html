@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN" >
+<head>
+  <meta charset="UTF-8">
+  <title>迎课松数字科技</title>
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+  <link href="https://cdnsprite.omomhe.com/assets/css/all.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="./build/style.css">
+  <link rel="stylesheet" href="./build/header.css">
+  <link rel="stylesheet" href="./build/slogan.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+<!-- 导航栏 -->
+<header>
+  <nav style="background: white; box-shadow: 0 4px 16px #e1e5ee;">
+    <div class="container">
+      <ul class="nav-list">
+        <li class="nav-logo">
+          <div class="logo" onclick="window.open('./index.html')">
+            <img alt="LOGO" src="./img/logo.png"/>&nbsp;迎课松<a id="name">数字科技</a>
+          </div>
+          <button class="btn" id="nav-toggle">
+          <i class="fa fa-bars"></i></button>
+        </li>
+        <!-- 菜单项 -->
+        <li class="nav-link">关于我们<i class="fa fa-chevron-up"></i>
+          <ul class="nav-drop">
+            <li>公司简介</li>
+            <li>业务范围</li>
+            <li>集团信息</li>
+          </ul>
+        </li>
+        <!-- 次级菜单 -->
+        <li class="nav-link">案例展示<i class="fa fa-chevron-up"></i>
+		   <ul class="nav-drop">
+			 <a href="./Case/"><li>全品类</li></a>
+			 <a href="./Sample/"><li>特别版</li></a>
+		   </ul>
+		</li>
+        <!-- 末尾菜单 -->
+		<li class="nav-link">教学资源<i class="fa fa-chevron-up"></i>
+          <ul class="nav-drop">
+			  <a href="./Wiki/"><li>企培课件制作初阶</li></a>
+            <li>进阶学习内容</li>
+          </ul>
+        </li>
+        <!-- 外部按钮 -->
+        <li class="nav-item tool"><button class="btn"><i class="fa-brands fa-weixin"></i>&nbsp;公众号</button><span class="tip"><img alt="QrCode" src="https://cdnsprite.omomhe.com/wiki/QRcode.jpg"></span></li>        
+      </ul>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div class="container" align="center">
+  <main style="margin: 8rem 0 3.5rem; padding: 1rem; border-radius: 8px; color:888; background: white; box-shadow: 0 4px 12px  #e1e5ee">
+  <h4><i class="fa-solid fa-sync fa-spin"></i>&nbsp;站点建设中</h4>
+  <lottie-player class="animg" src="./img/builder.json
+" background="transparent"  speed="1" loop autoplay></lottie-player>
+  <div class="slogan">
+    <span style="--i: 1">精</span>
+    <span style="--i: 2">彩</span>
+    <span style="--i: 3">即</span>
+    <span style="--i: 4">将</span>
+    <span style="--i: 5">呈</span>
+    <span style="--i: 6">现</span>
+    <span style="--i: 7">!</span>
+    <span class="opacity-0"> </span>
+    <span style="--i: 8">敬</span>
+    <span style="--i: 9">请</span>
+    <span style="--i: 10">期</span> 
+    <span style="--i: 11">待</span>
+    <span style="--i: 12">~</span
+  </div>
+    <p style="font-size:14px;line-height:2.5;">Powered by <a href="https://baochn.com" target="_blank"><i class="fa-regular fa-planet-ringed fa-shake"></i></a></p>
+  </main>  
+</div>
+</body>
+<!-- 尾部info -->
+<footer id="contact">
+  <ul>
+    <div id="icon-container">
+      <a target="_blank" href="https://cdnsprite.omomhe.com/wiki/QRcode.jpg">
+        <div class="icon">
+          <li><i class="fab fa-weixin"></i></li>
+        </div>
+      </a>
+      <a target="_blank" href="https://s.weibo.com/weibo?q=%E8%BF%8E%E8%AF%BE%E6%9D%BE">
+        <div class="icon">
+          <li><i class="fab fa-weibo"></i></li>
+        </div>
+      </a>
+      <a target="_blank" href="tel:051262588188">
+        <div class="icon">
+          <li><i class="fa-solid fa-headset"></i></li>
+        </div>
+      </a>
+      <a target="_blank" href="#">
+        <div class="icon">
+          <li><i class="far fa-envelope"></i></li>
+        </div>
+      </a>
+      <a target="_blank" href="https://ditu.amap.com/place/B02000JEN5">
+        <div class="icon">
+          <li><i class="fa-solid fa-location-dot"></i></li>
+        </div>
+      </a>
+    </div>
+  </ul>
+  <p>&copy; 2022&nbsp;迎课松数字科技</p>
+<!-- partial -->
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/lottie-player/1.5.7/lottie-player.js"></script>
+<script src="./build/header.js"></script>
+</footer>
+</html>

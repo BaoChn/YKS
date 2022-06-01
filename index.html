@@ -1,22 +1,203 @@
 <!DOCTYPE html>
-<html lang="cn" >
+<html lang="zh-CN" >
 <head>
   <meta charset="UTF-8">
-  <title>迎课松数字科技——创新、共赢、引领</title>
-  <meta content="#181d23" name="theme-color" />
-  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-  <meta name="author" content="Yago Estévez" />
-  <meta name="description" content="Portfolio Website by Yago Estévez" />
-  <meta name="keywords" content="portfolio, css, javascript, software, coding, programming, web, development, developer, fullstack, frontend, freecodecamp, es2015" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'><link rel="stylesheet" href="./style.css">
-
+  <title>迎课松数字科技</title>
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+  <link href="https://cdnsprite.omomhe.com/assets/css/all.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.bootcdn.net/ajax/libs/aos/3.0.0-beta.6/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./build/style.css">
+  <link rel="stylesheet" href="./build/header.css">
+  <link rel="stylesheet" href="./build/index.css">
+  <script src="https://cdn.bootcdn.net/ajax/libs/lottie-player/1.5.7/lottie-player.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div id="app"></div>
-<!-- partial -->
-  <script src='https://unpkg.com/react@16/umd/react.production.min.js'></script>
-<script src='https://unpkg.com/react-dom@16/umd/react-dom.production.min.js'></script><script  src="./script.js"></script>
-
+<!-- 导航栏 -->
+<header>
+  <nav class="nav">
+    <div class="container">
+      <ul class="nav-list">
+        <li class="nav-logo">
+          <div class="logo" onclick="window.open('./index.html')">
+            <img alt="LOGO" src="./img/logo.png"/>&nbsp;迎课松<a id="name">数字科技</a>
+          </div>
+          <button class="btn" id="nav-toggle">
+          <i class="fa fa-bars"></i></button>
+        </li>
+        <!-- 菜单项 -->
+        <li class="nav-link">关于我们<i class="fa fa-chevron-up"></i>
+          <ul class="nav-drop">
+            <li onclick="window.open('./404.html')">公司简介</li>
+            <li onclick="window.open('./404.html')">业务范围</li>
+            <li onclick="window.open('./404.html')">集团信息</li>
+          </ul>
+        </li>
+        <!-- 次级菜单 -->
+        <li class="nav-link">案例展示<i class="fa fa-chevron-up"></i>
+		   <ul class="nav-drop">
+			 <a href="./Case/"><li>全品类</li></a>
+			 <a href="./Sample/"><li>特别版</li></a>
+		   </ul>
+		</li>
+        <!-- 末尾菜单 -->
+		<li class="nav-link">教学资源<i class="fa fa-chevron-up"></i>
+          <ul class="nav-drop">
+			  <a href="./Wiki/"><li>企培课件制作初阶</li></a>
+            <li onclick="window.open('./404.html')">进阶学习内容</li>
+          </ul>
+        </li>
+        <!-- 外部按钮 -->
+        <li class="nav-item tool"><button class="btn"><i class="fa-brands fa-weixin"></i>&nbsp;公众号</button><span class="tip"><img alt="QrCode" src="https://cdnsprite.omomhe.com/wiki/QRcode.jpg"></span></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div class="index">
+  <section class="main">
+    <div class="main__desc" data-aos="fade-right">
+      <p class="tag rounded">
+        <i class="fa-duotone fa-sparkles"></i>&nbsp;焕新上线
+      </p>
+      <h1>一站式<br>定制体验</h1>
+      <p>Ae宣传片、短视频、微课、动画、图文、手绘、H5…
+      </p>
+      <button class="button button-primary rounded" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="0"><a href="#start">即刻了解</a></button>
+    </div>
+    <lottie-player class="main__image" src="./img/custom.json
+" background="transparent"  speed="1" loop autoplay data-aos="fade-up-left" data-aos-duration="888"></lottie-player>
+  </section>
+  <section class="excellence" id="start">
+    <p class="tag rounded" data-aos="zoom-out">
+      <i class="fa-duotone fa-eye"></i>&nbsp;选择缘由
+    </p>
+    <h2 data-aos="fade-up" data-aos="zoom-in-up">UPB，三步走</h2>
+    <p class="excellence__desc" data-aos="fade-up" data-aos-delay="50">用户生成内容×专业生产内容×混合式学习</p>
+    <div class="excellence__items">
+      <div class="excellence__item" data-aos="zoom-in-up" data-aos-delay="50">
+        <div class="background-success excellence__icon flex items-center justify-center">
+          <i class="fa-duotone fa-user" style="color:#52c41a"></i></div>
+        <h3>UGC<br>用户生成内容</h3>
+        <p>由品牌的<u>追随者</u>或<u>消费者</u>而非公司本身创建的任何类型的媒体。</p>
+      </div>
+      <div class="excellence__item" data-aos="zoom-in-up" data-aos-delay="100">
+        <div class="background-danger excellence__icon flex items-center justify-center">
+          <i class="fa-duotone fa-briefcase" style="color:#f5222d"></i>
+        </div>
+        <h3>PGC<br>专业生产内容</h3>
+        <p>主要通过具有一定专业背景的<a class="bold">专业人士</a>生产内容，通常伴随商业行为。</p>
+      </div>
+      <div class="excellence__item" data-aos="zoom-in-up" data-aos-delay="200">
+        <div class="background-info excellence__icon flex items-center justify-center">
+          <i class="fa-duotone fa-command" style="color:#1890ff"></i>
+        </div>
+        <h3>BL<br>混合式学习</h3>
+        <p>按照系统论的观点和绩效方法，恰当结合传统学习手段和在线学习手段的学习方式。</p>
+      </div>
+    </div>
+      <button class="button rounded" data-aos="zoom-out" onclick="javascript:alert('咕咕咕😴')"><i class="fa-regular fa-earth-asia"></i>&nbsp;了解更多</button>
+  </section>
+  <section class="product-team">
+    <lottie-player class="product-team__image" src="./img/partner_shake.json
+" background="transparent"  speed="1" loop autoplay data-aos="flip-right"></lottie-player>
+    <div class="product-team__desc" data-aos="zoom-out-left">
+      <p class="tag rounded">
+        <i class="fa-duotone fa-sitemap"></i>&nbsp;团队协作
+      </p>
+      <h2>资源共享×互利共赢</h2>
+      <p>调动团队成员的所有资源与才智，并且会自动地驱除所有不和谐、不公正的现象，同时对表现突出者及时予以奖励，从而使团队协作产生一股强大而持久的力量。</p>
+    </div>
+  </section>
+  <section class="engineering-team">
+    <lottie-player class="engineering-team__image" src="./img/subject.json
+" background="transparent"  speed="1" loop autoplay data-aos="flip-left"></lottie-player>
+    <div class="engineering-team__desc" data-aos="zoom-out-right">
+      <p class="tag rounded">
+        <i class="fa-duotone fa-display-code"></i>&nbsp;课程开发
+      </p>
+      <h2>科目融合×云端教学</h2>
+      <p>通过需求分析确定课程目标，再根据这一目标选择某一个学科（或多个学科）的教学内容和相关教学活动进行计划、组织、实施、评价、修订，以最终达到课程目标的整个工作过程</p>
+    </div>
+  </section>
+  <section class="testimony" data-aos="fade-up">
+    <h3>
+      “技能专业，沟通及时，期待下次合作！”
+    </h3>
+    <img src="https://img.zcool.cn/community/015ac85f110b9fa801206621387957.png" alt="CTO-Big-Spring" class="testimony__image" style="height:80px;border-radius:100%;">
+    <p class="testimony__name">马*梅 女士</p>
+    <p class="testimony__name">CTO @××银行</p>
+    <hr>
+    <div class="testimony__companies">
+      <img src="https://logos-download.com/wp-content/uploads/2016/08/Bank_Of_China_logo.png" alt="Bank-Of-China" class="testimony__company" style="height:35px;" data-aos="zoom-out" data-aos-duration="1000">
+      <img src="https://logos-download.com/wp-content/uploads/2016/08/Bank_Of_China_logo.png" alt="Bank-Of-China" class="testimony__company" style="height:35px;" data-aos="zoom-out" data-aos-delay="100" data-aos-duration="1000">
+      <img src="https://logos-download.com/wp-content/uploads/2016/08/Bank_Of_China_logo.png" alt="Bank-Of-China" class="testimony__company" style="height:35px;" data-aos="zoom-out" data-aos-delay="200" data-aos-duration="1000">
+      <img src="https://logos-download.com/wp-content/uploads/2016/08/Bank_Of_China_logo.png" alt="Bank-Of-China" class="testimony__company" style="height:35px;" data-aos="zoom-out" data-aos-delay="300" data-aos-duration="1000">
+    </div>
+  </section>
+  <section class="sign-up" data-aos="fade-up" data-aos-delay="150">
+    <div class="sign-up__text" data-aos="zoom-in">
+      <h2>携手创造更多可能</h2>
+      <p class="sign-up__desc">深度合作</p>
+      <div class="sign-up__companies">
+        <img src="https://logos-download.com/wp-content/uploads/2016/08/Bank_Of_China_logo.png" alt="Bank-Of-China" class="sign-up__company" style="width:100px;">
+        <img src="https://logos-download.com/wp-content/uploads/2016/08/Bank_Of_China_logo.png" alt="Bank-Of-China" class="sign-up__company" style="width:100px;">
+        <img src="https://logos-download.com/wp-content/uploads/2016/08/Bank_Of_China_logo.png" alt="Bank-Of-China" class="sign-up__company" style="width:100px;">
+        <img src="https://logos-download.com/wp-content/uploads/2016/08/Bank_Of_China_logo.png" alt="Bank-Of-China" class="sign-up__company" style="width:100px;">
+      </div>
+    </div>
+    <form class="sign-up__form">
+      <h3><i class="fa-duotone fa-pen-to-square"></i>&nbsp;注册信息</h3>
+      <input class="input" type="email" placeholder="邮箱">
+      <input class="input" type="password" placeholder="密钥">
+      <input type="button" class="button button-primary mb-6" name="Button" value="提交" onclick="javascript:alert('尚未开发😅')">
+      <p class="mb-6">第三方应用</p>
+      <a>
+      <button class="button rounded background-success" onclick="window.open('https://www.weixin.com/')"><i class="fa-brands fa-weixin" style="color:#52c41a"></i>微信</button>&nbsp;
+      <button class="button rounded background-danger" onclick="window.open('http://ir.weibo.com/')"><i class="fa-brands fa-weibo" style="color:#f5222d"></i>微博</button>&nbsp;
+      <button class="button rounded background-info" onclick="window.open('https://shang.qq.com/v3/index.html')"><i class="fa-brands fa-qq" style="color:#1890ff"></i>QQ</button>
+      </a>
+    </form>
+  </section>
+</div>
 </body>
+<!-- 尾部info -->
+<footer id="contact">
+  <ul>
+    <div id="icon-container">
+      <a target="_blank" href="https://cdnsprite.omomhe.com/wiki/QRcode.jpg">
+        <div class="icon">
+          <li><i class="fab fa-weixin"></i></li>
+        </div>
+      </a>
+      <a target="_blank" href="https://s.weibo.com/weibo?q=%E8%BF%8E%E8%AF%BE%E6%9D%BE">
+        <div class="icon">
+          <li><i class="fab fa-weibo"></i></li>
+        </div>
+      </a>
+      <a target="_blank" href="tel:051262588188">
+        <div class="icon">
+          <li><i class="fa-solid fa-headset"></i></li>
+        </div>
+      </a>
+      <a target="_blank" href="admin@omomhe.com">
+        <div class="icon">
+          <li><i class="far fa-envelope"></i></li>
+        </div>
+      </a>
+      <a target="_blank" href="https://ditu.amap.com/place/B02000JEN5">
+        <div class="icon">
+          <li><i class="fa-solid fa-location-dot"></i></li>
+        </div>
+      </a>
+    </div>
+  </ul>
+  <p>&copy; 2022&nbsp;迎课松数字科技</p>
+<!-- partial -->
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/lottie-player/1.5.7/lottie-player.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
+<script src="./build/header.js"></script>
+<script src="./build/index.js"></script>
+</footer>
 </html>

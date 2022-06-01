@@ -1,0 +1,60 @@
+body {
+  background-color: #edf5f7 !important;
+}
+
+/*******************
+Feature 41
+*******************/
+.wrap-feature41-box .f41-tab {
+  display: block;
+}
+
+.wrap-feature41-box .f41-tab li a {
+  display: flex;
+  margin-bottom: 10px;
+  padding: 25px;
+}
+
+.wrap-feature41-box .f41-tab li a .t-icon {
+  margin-right: 25px;
+  color: #8d97ad;
+}
+
+.wrap-feature41-box .f41-tab li a h5 {
+  font-weight: 500;
+}
+
+.wrap-feature41-box .f41-tab li a h6 {
+  font-size: 14px;
+  margin-bottom: 0px;
+  color: midnightblue;
+}
+
+.wrap-feature41-box .f41-tab li a.active, .wrap-feature41-box .f41-tab li a:hover {
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+  border-radius: 1rem;
+}
+
+.wrap-feature41-box .f41-tab li a.active .t-icon, .wrap-feature41-box .f41-tab li a:hover .t-icon {
+  background: #00b4ff;
+  background: -webkit-linear-gradient(legacy-direction(to right), #00b4ff 0%, #00b4ff 100%);
+  background: linear-gradient(to right, #00b4ff 0%, #00b4ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.title h1 {
+  padding: 2rem;
+  margin: 1rem 0;
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0;
+}
+.title h1.txt {
+  text-shadow: 0px 2.2px 3px rgba(29, 70, 130, 0.8), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+  align: center;
+  margin-bottom: -3rem;
+}

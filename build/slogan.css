@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* slogan */
+.slogan {
+	position: relative;
+	line-height: 0;
+}
+.slogan span {
+	position: relative;
+	display: inline-block;
+	color: #047ff0;
+	animation: slogan 2.4s ease-in-out infinite;
+	animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes slogan {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-10px)rotate(-0.05turn);
+  }
+  40%,
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (min-width: 768px) {
+  .slogan {
+    margin: 1rem;
+  }
+}
+@media (max-width: 1024px) {
+  .slogan {
+    margin: 1rem;
+  }
+}
