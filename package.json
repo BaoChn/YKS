@@ -1,0 +1,13 @@
+{
+    "name": "yks",
+    "title": "迎课松数字科技",
+    "author": "BaoChn",
+    "version": "1.0.0",
+    "email": "0246@88.com",
+    "homepage": "https://bc.dog",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BaoChn/YKS"
+    },
+    "bugs": "https://github.com/BaoChn/YKS/issues"
+}
